@@ -4,7 +4,7 @@ function inicio() {
 		$.post("php/sesion.php",{},function(data){
             ID=data;
             //alert(data);
-            if(!data){
+            if(data == "Error"){
                 window.location="./login.html";
             }
 		});

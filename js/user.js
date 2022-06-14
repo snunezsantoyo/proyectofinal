@@ -11,6 +11,7 @@ var valores;
 function inicio() {
 		$.post("php/sesion.php",{},function(data){
             //alert(data);
+            //console.log(data);
             if(data=="Error"){
                 window.location="./index.html";
             }

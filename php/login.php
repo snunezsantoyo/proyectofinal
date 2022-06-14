@@ -1,7 +1,7 @@
 <?php
 header('Content-type: text/html; charset=utf-8');
 require 'conexion.php';
-//session_start();
+session_start();
 //$conexion = mysqli_connect($host, $usuario, $clave, $bd, 3307);
 
 $conexion = mysqli_connect($host, $usuario, $clave, $bd, $puerto);
@@ -30,7 +30,7 @@ else{
     $row = mysqli_fetch_assoc($consulta);
     $userID = $row['UserInfo_ID'];
     //$pre_has = $row['pre_has'];
-    //$_SESSION['userID'] = $userID;
+    $_SESSION['userID'] = $userID;
     //header("location: ../PagPrincipal.html");
     echo $userID;
 }

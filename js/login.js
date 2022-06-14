@@ -22,9 +22,10 @@ function verificar() {
         "password": $('#inputPassword').val()
       },function(data) {
         //alert(data);
-        if(!data){
-            //console.log("todo bien , " + data);
+        console.log("todo bien , " + data);
 
+        if(data == 0){
+            
             $('#modal_falla').modal('show');
             $('#inputEmail').val("");
             $('#inputPassword').val("");
