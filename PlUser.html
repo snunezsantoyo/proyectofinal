@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/sesion.js"></script>
+    <script src="js/user.js"></script>
+    
+    <title>Usuario</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+    <!-- Custom styles for this template -->
+    
+    <link href="css/styleUser.css" rel="stylesheet">
+<style>
+#mensaje{
+			color: red;
+            font-size: 120%;
+		}
+        h4{
+            color: blue;
+            font-size: 150%;
+        }
+</style>
+  </head>
+
+<body>
+
+<div id="viewport">
+  <!-- Sidebar -->
+
+  <div id="sidebar">
+	<a id="logo" href=""><img src="img/logo_green.png" width="150"><img src="img/icon_green.png" width="40"></a>
+	
+	<header>
+      <a id="usuario">Usuario</a>
+
+    </header>
+
+		<!--<figure>
+			<img src="./img/electronics.jpg" widht="250" height="250">
+		</figure> -->
+    <ul class="nav">
+      <li>
+	<a>
+          <i class="zmdi zmdi-view-dashboard"></i>Nombre: <span id="nombre"> </span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <i class="zmdi zmdi-link"></i>Apellidos: <span id="apellidos"> </span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <i class="zmdi zmdi-widgets"></i>Fecha de Nacimiento: <span id="fecha"> </span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <i class="zmdi zmdi-calendar"></i>Correo: <span id="correo"> </span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <i class="zmdi zmdi-info-outline"></i> Teléfono: <span id="tel"> </span>
+        </a>
+      </li>
+      <li>
+	<button  id="modificar" onclick = "usuario()">
+	Modificar Usuario
+	</button>
+	<button  id="crear" onclick = "producto(0, 'x')">
+	Agregar Producto
+	</button>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Content -->
+ <div class="content">
+ 
+<nav class="navbar navbar-default">
+      <div id="bar" class="container-fluid">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+	    <a id="Home" onclick="home()"><i class="zmdi zmdi-notifications text-danger"></i> Home
+            </a>
+          </li>
+          <li><a id="salida" href="./php/salir.php" class="">Salir</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+<div class="table-responsive">
+<table class="table table-striped table-bordered" id="table-products">
+  <thead>
+    <tr>
+      <th width="5%">No.</th>
+      <th width="15%">Producto</th>
+      <th>Imagen</th>
+      <th width="20%">Descipción</th>
+      <th width="10%">Precio</th>
+      <th>Cantidad</th>
+      <th>Tipo</th>
+      <th width="10%">Acciones</th>
+    </tr>
+  </thead>
+
+  <!--Table body-->
+  <tbody>
+    <!--<tr class="table-info">
+      <td>Nombre</td>
+      <td><img src="img/electronics.jpg" width="150" weight="150"></td>
+      <td>Descripción detallada del artículo que se encuentra en venta</td>
+      <td>$$$$</td>
+      <td>####</td>
+      <td>Tipo</td>
+      <td><button class="btn btn-warning"><i class="fas fa-edit"></i></button> <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+    </tr>
+    <tr>
+      <td>Nombre</td>
+      <td><img src="img/electronics.jpg" width="150" weight="150"></td>
+      <td>Descripción detallada del artículo que se encuentra en venta</td>
+      <td>$$$$</td>
+      <td>####</td>
+      <td>Tipo</td>
+      <td><button class="btn btn-warning"><i class="fas fa-edit"></i></button> <button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+    </tr>-->
+  
+  </tbody>
+
+  <!--Table body-->
+
+</table>
+
+</div>
+</div>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Electronikus</h4>
+        </div>
+        <div class="modal-body">
+          <p id="mensaje">This is a small modal.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

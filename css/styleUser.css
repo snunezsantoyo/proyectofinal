@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  /*-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;*/
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  width: 20%;
+  width: 275px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #37474F;
+  /*-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;*/
+}
+
+figure{
+padding: 4px;
+	background: #666;
+	border-radius: 20px;
+}
+
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+	margin-top: 5%;
+}
+
+#logo{
+	margin-top: 10px;
+	background-color: #37474F;		
+}
+
+
+#modificar{
+	background-color: #4CAF50;
+	margin-top: 15%;
+	width: 90%;
+	padding: 15px;
+	border: #4CAF50;
+	color: white;
+	border-radius: 10px;
+	margin-left: 5%;
+}
+#crear{
+	background-color: #4CAF50;
+	width: 90%;
+	padding: 15px;
+	border:#4CAF50;
+	color: white;
+	border-radius: 10px;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+
+#sidebar .nav{
+  
+}
+
+#sidebar .nav a{
+  background: none;
+  border-bottom: 1px solid #455A64;
+  color: #CFD8DC;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #ECEFF1;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+#bar{
+	background: #37474F;
+}
+
+#salida{
+	background: none;
+	color: #4CAF50;
+  	padding: 5px 20px 5px 20px;
+	border: 2px solid #4CAF50;
+	border-radius: 5px;
+	font-weight: bold;
+	-webkit-transition-duration: 0.4s; 
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#Home{
+	background: none;
+	color: #4CAF50;
+  	padding: 5px 20px 5px 20px;
+	border: 2px solid #4CAF50;
+	border-radius: 5px;
+	font-weight: bold;
+	-webkit-transition-duration: 0.4s; 
+	margin-top: 15px;
+}
+#Home:hover, #salida:hover{
+	background-color: #4CAF50; /* Green */
+	color: white;
+}
+.table{
+	width: 75%;
+	margin-left: 300px;
+}
+thead{
+	background-color: #4CAF50;
+	color: white;
+	font-family: "Times New Roman";
+	font-weight: bold;
+}
+td{
+	text-align: center;
+}

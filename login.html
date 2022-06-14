@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+    <title>Login</title>
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
+	<script src="js/login.js"></script>
+	<style>
+
+
+		h1{
+			margin-top: 10%;
+		}
+		.form-signin{
+			width: 40%;
+			margin-left: 30%;
+			margin-top: 5%;
+			border: solid;
+			border-radius: 20px;
+			background: white;
+			box-shadow: skyblue 5px 5px 5px 5px;
+		}
+		#b1{
+			width: 60%;
+			margin-left: 20%;
+		}
+		#b2{
+			width: 60%;
+			margin-left: 20%;
+			margin-bottom: 10%;
+		}
+		#inputEmail{
+			width: 80%;
+			margin-left: 10%;
+			margin-bottom: 2%;
+		}
+		#inputPassword{
+			width: 80%;
+			margin-left: 10%;
+			margin-bottom: 2%
+		}
+		#elec{
+		margin: 30px 0 0 0;
+		}
+		.modal-body{
+			color: red;
+		}
+
+	</style>
+	
+  </head>
+
+  <body background="./img/fondo.jpg" class="text-center">
+
+		<p id="elec"><img src="./img/logo_white.png" width="200"><img src="./img/icon_white.png" width="50"></p>
+	 <div class="form-signin" >
+	 <!--<form action="./php/login.php" method="POST">-->
+	  <h1 class="h3 mb-3 font-weight-normal">BIENVENIDO</h1>
+	  <br>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" name="user" class="form-control" placeholder="Correo" required autofocus>
+      <label for="inputPassword" class="sr-only">Contraseña</label>
+      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+	  <br>
+	  <!--<div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Recordarme
+        </label>
+      </div>-->
+      <button class="btn btn-lg btn-primary btn-block" type="submit" id="b1">Entrar</button>
+	  <!--</form>
+	  <br>-->
+      <button class="btn btn-lg btn-primary btn-block" id="b2">Registrarse</button>
+    </div>
+	<div class="modal fade" id="modal_falla" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h6 class="modal-title">Electronikus</h6>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						
+					</div>
+					<div class="modal-body">
+							<p>Correo y/o Password Incorrectos</p>
+						  </div>
+				</div>
+		
+			</div>
+		</div>
+  </body>
+</html>
