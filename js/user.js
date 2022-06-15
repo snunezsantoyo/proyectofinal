@@ -77,12 +77,16 @@ function usuario(){
     valores = "E_v";
     enviarVariables();
 }
-function enviarVariables(){
+function enviarVariables(){ 
     nomVec= valores.split(",");
     for (i=0; i<nomVec.length; i++)
         pagina+=nomVec[i]+"="+escape(eval(nomVec[i]))+"&";
     pagina = pagina.substring(0, pagina.length-1);
     location.href=pagina;
+}
+
+function home(){
+    window.location = "./PagPrincipal.html";
 }
 
 function borrar(id_producto) {

@@ -71,9 +71,9 @@ function modalinfo(id) {
     document.getElementById('descripcion').innerHTML = baseDatos["Productos"][id].Description;
     document.getElementById('precio').innerHTML = baseDatos["Productos"][id].value;
     document.getElementById('categoria').innerHTML = baseDatos["Productos"][id].Clasificacion;
-    document.getElementById('vendedor').innerHTML = baseDatos["Productos"][id].Name+" "+baseDatos["Productos"][id].LastName+" "+baseDatos["Productos"][id].LastName_2;
-    document.getElementById('tel').innerHTML = baseDatos["Productos"][id].PhoneNumber;
-    document.getElementById('correo').innerHTML = baseDatos["Productos"][id].Email;
+    //document.getElementById('vendedor').innerHTML = baseDatos["Productos"][id].Name+" "+baseDatos["Productos"][id].LastName+" "+baseDatos["Productos"][id].LastName_2;
+    //document.getElementById('tel').innerHTML = baseDatos["Productos"][id].PhoneNumber;
+    //document.getElementById('correo').innerHTML = baseDatos["Productos"][id].Email;
     //document.getElementById('comprar').onclick = comprar;
     document.getElementById('modalfoto').src = baseDatos["Productos"][id].Photo;
 }
