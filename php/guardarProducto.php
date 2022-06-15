@@ -21,16 +21,16 @@ if($id == 0){
   $consulta = mysqli_query($conexion, "SELECT * from Products");
   $i = mysqli_num_rows($consulta)+1;
   $sql= "INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-  ('$UserInfo_ID', './img/Fotos/producto$i.jpg', '$ProductName', '$Description', '$value', '$Stock', '$Classification_ID', 1);";
+  ('$UserInfo_ID', './img/Fotos/producto$i.jpeg', '$ProductName', '$Description', '$value', '$Stock', '$Classification_ID', 1);";
   $result = mysqli_query($conexion, $sql);
-  rename ("../img/Fotos/producto.jpg", "../img/Fotos/producto$i.jpg");
+  rename ("../img/Fotos/producto.jpeg", "../img/Fotos/producto$i.jpeg");
 }
 else{
   $sql = "UPDATE Products SET ProductName='$ProductName', Description='$Description', value='$value', Stock='$Stock', Classification_ID='$Classification_ID' where Product_ID=$id";
   $result = mysqli_query($conexion, $sql);
   if($n == 1){
-    rename ("../img/Fotos/producto$id.jpg", "../img/Fotos/producto0.jpg");
-    rename ("../img/Fotos/producto.jpg", "../img/Fotos/producto$id.jpg");
+    rename ("../img/Fotos/producto$id.jpeg", "../img/Fotos/producto0.jpeg");
+    rename ("../img/Fotos/producto.jpeg", "../img/Fotos/producto$id.jpeg");
 }
 }
 

@@ -55,42 +55,42 @@ INSERT INTO UserInfo (Name, LastName, LastName_2, PhoneNumber, Age) VALUES ('Enr
 INSERT INTO UserLog (UserInfo_ID, Email, Password, Username) VALUES (1,'j.riveramedina@ugto.mx', 'secret1', 'Jackie');
 INSERT INTO UserLog (UserInfo_ID, Email, Password, Username) VALUES (2,'e.cisnerosvidal@ugto.mx', 'secret2', 'Enrique');
 
-INSERT INTO Classification (Clasificacion) VALUES ('Resistencias');
-INSERT INTO Classification (Clasificacion) VALUES ('Diodos');
-INSERT INTO Classification (Clasificacion) VALUES ('Compuertas');
-INSERT INTO Classification (Clasificacion) VALUES ('Capacitores');
+INSERT INTO Classification (Clasificacion) VALUES ('Termoformado');
+INSERT INTO Classification (Clasificacion) VALUES ('Temporada');
+INSERT INTO Classification (Clasificacion) VALUES ('Abecedario');
+INSERT INTO Classification (Clasificacion) VALUES ('Personajes');
 INSERT INTO Classification (Clasificacion) VALUES ('Otros');
 
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto1.jpg', 'Resistencia 1k ohm', 'Resistencia 1/4W', '1.00', '10', 1, 1);
+(1, './img/Fotos/producto1.jpeg', 'Animales zoologico', 'Animales zoologico termoformado 5 piezas', '1.00', '10', 1, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(2, './img/Fotos/producto2.jpg', 'Resistencia 100 ohm', 'Resistencia 1/4W', '1.00', '15', 1, 1);
+(2, './img/Fotos/producto2.jpeg', 'Animales granja', 'Animales de granja termoformado 5 piezas', '1.00', '15', 1, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto3.jpg', 'Protoboard', 'Protoboard Steren', '80.00', '5', 5, 1);
+(1, './img/Fotos/producto3.jpeg', 'gafet', 'paquete gafet masculino termoformado 5 piezas', '30.00', '50', 1, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto4.jpg', 'Led azul', 'Led azul ultrabrillante marca x', '3.00', '5', 2, 1);
+(1, './img/Fotos/producto4.jpeg', 'Unicornio', 'Unicornio termoformado 5 piezas', '30.00', '100', 1, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto5.jpg', 'Led rojo', 'Led rojo marca x', '3.00', '5', 2, 1);
+(1, './img/Fotos/producto5.jpeg', 'Arbol navidad', 'paquete arbol de navidad 5 piezas', '25.00', '5', 2, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(2, './img/Fotos/producto6.jpg', 'Capacitor 100 uF', 'Capacitor a 50V', '3.00', '5', 4, 1);
+(2, './img/Fotos/producto6.jpeg', 'Campanas navidad', 'paquete campanas navidad 5 piezas', '25.00', '5', 2, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(2, './img/Fotos/producto7.jpg', 'Capacitor 1nF', 'Capacitor ceramico', '3.00', '5', 4, 1);
+(2, './img/Fotos/producto7.jpeg', 'Nochebuena', 'paquete nochebuenas 5 piezas', '25.00', '5', 2, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto8.jpg', 'Resistencia 100k ohm', 'Resistencia 1/4W', '1.50', '10', 1, 1);
+(1, './img/Fotos/producto8.jpeg', 'Esferas navidad', 'paquete esferas diamantado 10 piezas', '40.00', '10', 2, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(2, './img/Fotos/producto9.jpg', 'Compuerta AND', 'Compuerta logica SN74LS08N', '15.00', '7', 3, 1);
+(2, './img/Fotos/producto9.jpeg', 'Numeros', 'paquete de numeros grueso', '40.00', '7', 3, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto10.jpg', 'Compuerta OR', 'Compuerta logica SN74LS32N', '10.00', '57', 3, 1);
+(1, './img/Fotos/producto10.jpeg', 'Abecedario', 'Abecedario grande', '10.00', '57', 3, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto11.jpg', 'Cables jumper', '10 jumpers macho-hembra', '5.00', '10', 5, 1);
+(1, './img/Fotos/producto11.jpeg', 'Mickey mouse', 'paquete mickey mouse 10 piezas', '35.00', '100', 4, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto12.jpg', 'Led verde', 'Led verde marca x', '3.00', '15', 2, 1);
+(1, './img/Fotos/producto12.jpeg', 'Luigi', 'paquete luigi 10 piezas', '25.00', '15', 4, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(2, './img/Fotos/producto13.jpg', 'Capacitor 100 uF', 'Capacitor a 16V', '3.00', '8', 4, 1);
+(2, './img/Fotos/producto13.jpeg', 'Minnie mouse', 'paquete minnie mouse 10 piezas', '35.00', '50', 4, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(2, './img/Fotos/producto14.jpg', 'Led blanco', 'Led ultrabrillante', '3.00', '15', 2, 1);
+(2, './img/Fotos/producto14.jpeg', 'Dia del maestro', 'Figura dia del maestro 1 pieza', '5.00', '200', 5, 1);
 INSERT INTO Products(UserInfo_ID, Photo, ProductName, Description, value, Stock, Classification_ID, estatus) VALUES 
-(1, './img/Fotos/producto15.jpg', 'Resistencia 550 ohm', 'Resistencia 1/4W', '1.00', '10', 1, 1);
+(1, './img/Fotos/producto15.jpeg', 'Dia del trabajo', 'paquete figura dia del trabajo 5 piezas', '30.00', '10', 5, 1);
 
 /*INSERT INTO State (Description) VALUES ('En camino');
 INSERT INTO State (Description) VALUES ('Entregado');
